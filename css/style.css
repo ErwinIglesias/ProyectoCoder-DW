@@ -1,0 +1,311 @@
+/* INICIO GENERAL STYLES */
+
+* {
+    padding: 0;
+    margin: 0;
+    background-color: #495867;
+}
+
+.logo{
+    width: 50px;
+}
+
+header{
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-bottom: 1px solid grey;
+    position: sticky;
+    top: 0;
+}
+
+.ulHeader{
+    padding-top: 5px;
+    display: flex;
+    list-style-type: none;
+}
+
+.ulHeader li{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    padding: 20px;
+    color: white;
+}
+
+.links:active, .links:visited, .links:hover{
+    color: white;
+}
+
+.links:hover{
+    color: #1F0318;
+}
+
+.tituloPagina{
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 25px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.containerLogoTitulo{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.imgInicioPc{
+    border: 1px solid black;
+    width: 350px;
+    height: 350px;
+}
+
+.containerSubTitIndex{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.subTitIndex{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.divImg1, .divImg2{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 15px;
+
+}
+
+footer{
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid grey;
+    margin-top: 20px;
+}
+
+.containerAyuda{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tituloAyuda{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.contactenos{
+    padding: 6px;
+    border-radius: 6px;
+}
+
+.redesSociales{
+    width: 250px;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.containerLogo{
+    width: 230px;
+    position: relative;
+    left: 40px;
+}
+
+.fa-instagram, .fa-facebook, .fa-twitter{
+    color: #ffe999;
+}
+
+.fa-instagram:hover, .fa-facebook:hover, .fa-twitter:hover{
+    transform: scale(1.2);
+    transition: 0.2s;
+}
+
+/* FIN GENERAL STYLES */
+
+
+
+
+/* INICIO STYLES CONTACTO */
+
+.tituloNosotros{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.containerMapa{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.mapa{
+    border: 1px solid black;
+}
+
+/* FIN STLYES CONTACTO */
+
+
+
+
+/* INICIO STYLES PRODUCTOS */
+
+.formSelecHard{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.SubTitHard{
+    margin-top: 10px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+}
+
+.selectHard{
+    margin-top: 8px;
+}
+
+.containerCards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+.cards{
+    height: 380px;
+    width: 250px;
+    border: 1px solid black;
+}
+
+.prodCard{
+    width: 250px;
+}
+
+.tituloCard{
+    font-weight: 700;
+    text-align: center;
+}
+
+.descripCard{
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+.precioCard{
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.containerComprar{
+    margin-top: 8px;
+    text-align: center;
+}
+
+.btnComprar{
+    border: 1px solid black;
+    padding: 6px;
+}
+
+.btnComprar:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
+
+}
+
+/* FIN STYLES PRODUCTOS */
+
+
+/* INICIO STYLES ARMATUPC */
+
+.containerArmaPc, .containerArmaPc2, .containerArmaPc3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.containerArmaPc2{
+    justify-content: space-evenly;
+}
+
+.containerArmaPc3{
+    justify-content: center;
+}
+
+
+/* STYLES PARA MOBILE */
+
+@media screen and (max-width: 768px) {
+    
+
+    /* INICIO STYLES MOBILE GENERALES */
+
+    header{
+        display: inline-block;
+    }
+
+    .SubTitHard{
+        margin-top: 30px;
+    }
+
+    /* FIN STYLES MOBILE GENERALES */
+
+
+    /* INICIO STYLES MOBILE INDEX */
+
+    .divImg1, .divImg2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imgInicioPc{
+        margin-top: 10px;
+        width: 350px;
+        height: 280px;
+    }
+
+    /* FIN STYLES MOBILE INDEX */
+
+
+    /* STYLES MOBILE PRODUCTOS */
+
+    .containerCards{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .prodCard{
+        width: 100%;
+    }
+    .cards{
+        margin-top: 20px;
+        height: 400px;
+        width: 300px;
+    }
+
+    /* FIN STYLE MOBILE PRODUCTOS */
+
+    /* INICIO STYLES MOBILE ARMA TU PC */
+
+    .containerArmaPc, .containerArmaPc2, .containerArmaPc3{
+        flex-direction: column;
+    }
+
+    /* FIN STYLES MOBILE ARMA TU PC */
+}

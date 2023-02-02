@@ -193,6 +193,36 @@ section{
     justify-content: center;
 }
 
+/* INICIO STYLES ARMA TU PC */
+
+.containerArmaTuPc{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.containerArmaPc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-select{
+    width: 200px;
+}
+
+/* FIN STYLES ARMA TU PC */
+
+/* INICIO STYLES CONTACTO */
+
+.containerUbi{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* FIN STYLES CONTACTO */
+
 /* STYLES VISTA DESKTOP */
 
 @media (min-width: 992px){
@@ -209,12 +239,12 @@ section{
     }
 
     .imgCarousel{
-        height: 350px;
+        height: 400px;
     }
     
     #carouselExample{
-        width: 750px;
-        height: 350px;
+        width: 800px;
+        height: 400px;
     }
 
     .nav-link:hover{
@@ -224,5 +254,22 @@ section{
 
     .rowFlex{
         border-top: 1px solid grey;
+    }
+
+    .containerArmaTuPc{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
+    .containerArmaPc{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .form-select{
+        width: 200px;
     }
 }

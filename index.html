@@ -1,77 +1,115 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,200&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a134c1edd0.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+      <link rel="stylesheet" href="css/style.css">
     <title>Inicio</title>
-</head>
-<body>
+  </head>
 
+  <body>
     <header>
-        <div class="containerLogoTitulo">
-            <img src="img/logoImg.png" alt="logo" class="logo">
-
-            <h1 class="tituloPagina">H4RDWARE</h1>
-        </div>       
-
-            <ul class="ulHeader">
-                <li><a href="index.html" class="links">INICIO</a></li>
-                <li><a href="views/productos.html" class="links">PRODUCTOS</a></li>
-                <li><a href="views/armatupc.html" class="links">ARMA TU PC</a></li>
-                <li><a href="views/ofertas.html" class="links">OFERTAS</a></li>
-                <li><a href="views/contacto.html" class="links">CONTACTO</a></li>
-            </ul>
+        <div class="container-fluid">
+            <div class="row containerHeader">
+                <div class="col-lg-4">
+                    <div class="containerLogoTit">
+                        <img src="img/logoImg.png" class="imgLogo" alt="">
+                        <h1>HARDWARE</h1>
+                    </div>
+                </div>
+                
+                <div class="col-lg-8">
+                    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                        <div class="container-fluid contenedorNavHamb">
+                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                              <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="views/productos.html">PRODUCTOS</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="views/armatupc.html">ARMA TU PC</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="views/ofertas.html">OFERTAS</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="views/contacto.html">CONTACTO</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </nav>
+                </div>
+            </div>
+            </div>
     </header>
 
-    <section class="seccionImagenes">
+    <div class="containerQuienesSomos">
+      <h2 class="subTitQuienes">¿QUIENES SOMOS?</h2>
+      <p class="descQuienes">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, consequatur illum debitis facilis ducimus sed magnam quo.</p>
+    </div>
 
-        <div class="containerSubTitIndex">
-            <h2 class="SubTitIndex">¿QUIENES SOMOS?</h2>
-            <p>Somos Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur labore dolor ipsum eum. </p>
+    <section>
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/pc1.jpg" class="d-block w-100 imgCarousel" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/pc2.jpg" class="d-block w-100 imgCarousel" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/pc4.jpg" class="d-block w-100 imgCarousel" alt="...">
+          </div>
         </div>
-
-        <div class="divImg1">
-            <img src="img/pc1.jpg" class="imgInicioPc" alt="">
-            <img src="img/pc2.jpg" class="imgInicioPc" alt="">
-            <img src="img/pc5.jpg" class="imgInicioPc" alt="">
-        </div>
-
-        
-        <div class="divImg2">
-            <img src="img/pc4.jpg" class="imgInicioPc" alt="">
-            <img src="img/pc5.jpg" class="imgInicioPc" alt="">
-            <img src="img/pc1.jpg" class="imgInicioPc" alt="">
-       </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </section>
 
 
-    <footer class="footerFlex">
+    <footer>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-4 containerFooter containerAyuda">
+            <h5 class="titAyuda">¿NECESITAS AYUDA?</h5>
+            <button class="contactanos">CONTACTANOS</button>
+          </div>
 
-        <div class="containerAyuda">
-            <p class="tituloAyuda">¿NECESITAS AYUDA?</p>
-            <input type="submit" value="CONTACTANOS" class="contactenos">
-        </div>
+          <div class="col-4 containerFooter containerRedes">
+            <a href=""> <i class="fa-brands fa-facebook fa-2x"></i></a>
+            <a href=""> <i class="fa-brands fa-instagram fa-2x"></i></a>
+            <a href=""> <i class="fa-brands fa-twitter fa-2x"></i></a>
+          </div>
 
-        <div class="redesSociales">
-            <span>
-                <i class="fa-brands fa-facebook fa-2x"></i>
-            </span>
-            <span>
-                <i class="fa-brands fa-instagram fa-2x"></i>
-            </span>
-            <span>
-                <i class="fa-brands fa-twitter fa-2x"></i>
-            </span>
+          <div class="col-4 containerFooter">
+              <img src="img/logoImg.png" class="imgLogo" alt="">
+          </div>
         </div>
-
-        <div class="containerLogo">
-            <img src="img/logoImg.png" alt="logo" class="logo">
-        </div>
+      </div>
     </footer>
 
-</body>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+
+
 </html>

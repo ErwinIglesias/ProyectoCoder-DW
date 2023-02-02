@@ -1,126 +1,101 @@
-/* INICIO GENERAL STYLES */
-
-* {
-    padding: 0;
+*{
     margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body{
     background-color: #495867;
 }
 
-.logo{
-    width: 50px;
-}
 
-header{
-    height: 80px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    border-bottom: 1px solid grey;
-    position: sticky;
-    top: 0;
-}
+/* INICIO STYLES HEADER */
 
-.ulHeader{
-    padding-top: 5px;
+.containerLogoTit{
     display: flex;
-    list-style-type: none;
-}
-
-.ulHeader li{
-    display: flex;
+    justify-content: center;
     align-items: center;
-    font-size: 18px;
-    padding: 20px;
-    color: white;
 }
 
-.links:active, .links:visited, .links:hover{
-    color: white;
+.imgLogo{
+    width: 70px;
 }
 
-.links:hover{
-    color: #1F0318;
+.bg-light{
+    background-color: noine !important;
 }
 
-.tituloPagina{
-    font-family: 'Montserrat', sans-serif;
-    margin-left: 25px;
+.bg-body-tertiary{
+    background-color: #495867 !important;
 }
 
-a{
-    text-decoration: none;
+.row>* {
+    padding-right: 0; 
+    padding-left: 0; ;
 }
 
-.containerLogoTitulo{
-    width: 50%;
+.contenedorNavHamb{
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-left: 50px;
+    justify-content: center !important;
 }
 
-.imgInicioPc{
-    border: 1px solid black;
-    width: 350px;
-    height: 350px;
-}
-
-.containerSubTitIndex{
-    margin-top: 10px;
+#navbarNav{
     text-align: center;
 }
 
-.subTitIndex{
-    font-family: 'Montserrat', sans-serif;
-}
-
-.divImg1, .divImg2{
+.nav-item{
     display: flex;
-    justify-content: space-evenly;
-    margin-top: 15px;
-
+    justify-content: center;
 }
 
-footer{
-    height: 70px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    border: 1px solid grey;
-    margin-top: 20px;
+.nav-link{
+    margin-top: 10px;
+    border: 1px solid black;
+    border-radius: 8px;
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.6);
+    width: 30%;
 }
 
-.containerAyuda{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/* FIN STYLES HEADER */
+
+
+/* INICIO STYLES FOOTER */
+
+.titAyuda{
+    text-align: center;
 }
 
-.tituloAyuda{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
-    font-weight: 200;
-}
-
-.contactenos{
-    padding: 6px;
-    border-radius: 6px;
-}
-
-.redesSociales{
-    width: 250px;
-    height: 70px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.containerLogo{
-    width: 230px;
+.contactanos{
+    margin-top: 5px;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 12px;
+    border: 1px solid white;
+    padding: 8px 10px;
+    transition: all 0.3s;
     position: relative;
-    left: 40px;
-}
+    overflow:hidden;
+  }
+  
+.contactanos:hover{
+    background-color: #297373;
+  }
+  
+.contactanos:before{
+    content:"";
+    background-color: black;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:50px;
+    position: absolute;
+    transform:translatex(-100%) rotate(45deg);  
+    transition: all 0.3s;
+  }
+  
+.contactanos:hover:before{
+      transform:translatex(100%) rotate(45deg); 
+  }
 
 .fa-instagram, .fa-facebook, .fa-twitter{
     color: #ffe999;
@@ -131,181 +106,123 @@ footer{
     transition: 0.2s;
 }
 
-/* FIN GENERAL STYLES */
-
-
-
-
-/* INICIO STYLES CONTACTO */
-
-.tituloNosotros{
+.containerFooter{
     margin-top: 30px;
-    text-align: center;
-    font-size: 25px;
-}
-
-.containerMapa{
-    margin-top: 20px;
-    text-align: center;
-}
-
-.mapa{
-    border: 1px solid black;
-}
-
-/* FIN STLYES CONTACTO */
-
-
-
-
-/* INICIO STYLES PRODUCTOS */
-
-.formSelecHard{
-    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-top: 1px solid grey;
+    padding-top: 15px;
+}
+
+.containerAyuda{
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.SubTitHard{
-    margin-top: 10px;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 35px;
-}
-
-.selectHard{
-    margin-top: 8px;
-}
-
-.containerCards{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 15px;
-}
-
-.cards{
-    height: 380px;
-    width: 250px;
-    border: 1px solid black;
-}
-
-.prodCard{
-    width: 250px;
-}
-
-.tituloCard{
-    font-weight: 700;
-    text-align: center;
-}
-
-.descripCard{
-    margin-top: 15px;
-    font-weight: 600;
-}
-
-.precioCard{
-    margin-top: 10px;
-    text-align: center;
-    font-weight: bold;
-}
-
-.containerComprar{
-    margin-top: 8px;
-    text-align: center;
-}
-
-.btnComprar{
-    border: 1px solid black;
-    padding: 6px;
-}
-
-.btnComprar:hover{
-    transform: scale(1.1);
-    transition: 0.2s;
-
-}
-
-/* FIN STYLES PRODUCTOS */
-
-
-/* INICIO STYLES ARMATUPC */
-
-.containerArmaPc, .containerArmaPc2, .containerArmaPc3{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.containerArmaPc2{
+.containerRedes{
     justify-content: space-evenly;
 }
+/* FIN STYLES FOOTER */
 
-.containerArmaPc3{
+
+
+/* INICIO STYLES INDEX */
+
+.imgCarousel{
+    height: 300px;
+}
+
+#carouselExample{
+    box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+    margin-top: 30px;
+    width: 98%;
+}
+
+section{
+    display: flex;
     justify-content: center;
 }
 
 
-/* STYLES PARA MOBILE */
+/* FIN STYLES INDEX */
 
-@media screen and (max-width: 768px) {
-    
+/* INICIO STYLES PRODUCTOS */
 
-    /* INICIO STYLES MOBILE GENERALES */
+.subTitQuienes, .descQuienes{
+    text-align: center;
+}
 
-    header{
-        display: inline-block;
+.subTitProduct{
+    text-align: center;
+}
+
+.containerSelect{
+ display: flex;
+ justify-content: center;
+ flex-direction: column;
+ align-items: center;
+}
+
+.dropdown-menu-dark{
+    position: absolute;
+    inset: 0px auto auto -50px!important;
+    margin: 0px;
+    transform: translate3d(0px, 40px, 0px);
+}
+
+.card{
+    background-color: #495867;
+    box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+}
+
+.btn-primary{
+    border: solid 1px #297373;
+    background-color: #297373;
+}
+
+.centrarCard{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.containerBtn{
+    display: flex;
+    justify-content: center;
+}
+
+/* STYLES VISTA DESKTOP */
+
+@media (min-width: 992px){
+    .nav-item{
+        width: 230px;
     }
 
-    .SubTitHard{
-        margin-top: 30px;
+    .nav-link{
+        width: 120px;
     }
 
-    /* FIN STYLES MOBILE GENERALES */
-
-
-    /* INICIO STYLES MOBILE INDEX */
-
-    .divImg1, .divImg2 {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .imgInicioPc{
-        margin-top: 10px;
-        width: 350px;
-        height: 280px;
-    }
-
-    /* FIN STYLES MOBILE INDEX */
-
-
-    /* STYLES MOBILE PRODUCTOS */
-
-    .containerCards{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .prodCard{
-        width: 100%;
-    }
-    .cards{
+    .containerQuienesSomos{
         margin-top: 20px;
-        height: 400px;
-        width: 300px;
     }
 
-    /* FIN STYLE MOBILE PRODUCTOS */
-
-    /* INICIO STYLES MOBILE ARMA TU PC */
-
-    .containerArmaPc, .containerArmaPc2, .containerArmaPc3{
-        flex-direction: column;
+    .imgCarousel{
+        height: 350px;
+    }
+    
+    #carouselExample{
+        width: 750px;
+        height: 350px;
     }
 
-    /* FIN STYLES MOBILE ARMA TU PC */
+    .nav-link:hover{
+        transform: scale(1.2);
+        transition: 0.2s;
+    }
+
+    .rowFlex{
+        border-top: 1px solid grey;
+    }
 }

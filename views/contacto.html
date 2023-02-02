@@ -1,68 +1,187 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,200&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a134c1edd0.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <title>Contacto</title>
-</head>
-<body>
-    
+  </head>
+
+  <body>
     <header>
-
-        
-        <div class="containerLogoTitulo">
-            <img src="../img/logoImg.png" alt="logo" class="logo">
-
-            <h1 class="tituloPagina">H4RDWARE</h1>
-        </div>  
-
-        <ul class="ulHeader">
-            <li><a href="../index.html" class="links">INICIO</a></li>
-            <li><a href="productos.html" class="links">PRODUCTOS</a></li>
-            <li><a href="armatupc.html" class="links">ARMA TU PC</a></li>
-            <li><a href="ofertas.html" class="links">OFERTAS</a></li>
-            <li><a href="contacto.html" class="links">CONTACTO</a></li>
-        </ul>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="containerLogoTit">
+                        <img src="../img/logoImg.png" class="imgLogo" alt="">
+                        <h1>HARDWARE</h1>
+                    </div>
+                </div>
+                
+                <div class="col-lg-8">
+                    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                        <div class="container-fluid contenedorNavHamb">
+                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="productos.html">PRODUCTOS</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="armatupc.html">ARMA TU PC</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="ofertas.html">OFERTAS</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="contacto.html">CONTACTO</a>
+                                  </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </nav>
+                </div>
+            </div>
+            </div>
     </header>
 
-        <h3 class="tituloNosotros">NOSOTROS</h3>
- 
-        <div class="containerMapa">
-            <iframe class="mapa"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6629.93669473325!2d5.
-                311538040619823!3d60.39415875091549!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x463cfeaec4a529e7%3A0x1f866f00d2eee1b7!
-                2sFjord%20Tours%20AS!5e0!3m2!1ses!2sar!4v1672875253672!5m2!1ses!2sar" 
-                width="500" height="350" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
+    <h2 class="subTitProduct">OFERTAS</h2>
+
+    <div class="containerSelect">
+      <h3>SELECCIONA TIPO DE HARD</h3>
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          SELECCION
+        </button>
+        <ul class="dropdown-menu dropdown-menu-dark">
+          <li><a class="dropdown-item active" href="#">COMBOS</a></li>
+          <li><a class="dropdown-item" href="#">PLACAS DE VIDEO</a></li>
+          <li><a class="dropdown-item" href="#">MEMORIAS RAM</a></li>
+          <li><a class="dropdown-item" href="#">PROCESADOR</a></li>
+          <li><a class="dropdown-item" href="#">MOTHERBOARD</a></li>
+          <li><a class="dropdown-item" href="#">DISCOS RIGIDOS | SOLIDOS</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container-fluid containerCards">
+      <div class="row">
+
+        <div class="col-xs-12 col-lg-4 centrarCard">
+          <div class="card" style="width: 18rem;">
+            <img src="../img/pc1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <div class="containerBtn">
+                <a href="#" class="btn btn-primary">COMPRAR</a>
+              </div>
+            </div>
+          </div>
         </div>
 
-        
-        <footer class="footerFlex">
+        <div class="col-xs-12 col-lg-4 centrarCard">
+          <div class="card" style="width: 18rem;">
+            <img src="../img/pc2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <div class="containerBtn">
+                <a href="#" class="btn btn-primary">COMPRAR</a>
+              </div>
+            </div>
+          </div>
+        </div>
 
-            <div class="containerAyuda">
-                <p class="tituloAyuda">¿NECESITAS AYUDA?</p>
-                <input type="submit" value="CONTACTANOS" class="contactenos">
+        <div class="col-xs-12 col-lg-4 centrarCard">
+          <div class="card" style="width: 18rem;">
+            <img src="../img/pc4.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <div class="containerBtn">
+                <a href="#" class="btn btn-primary">COMPRAR</a>
+              </div>
             </div>
-    
-            <div class="redesSociales">
-                <span>
-                    <i class="fa-brands fa-facebook fa-2x"></i>
-                </span>
-                <span>
-                    <i class="fa-brands fa-instagram fa-2x"></i>
-                </span>
-                <span>
-                    <i class="fa-brands fa-twitter fa-2x"></i>
-                </span>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-lg-4 centrarCard">
+          <div class="card" style="width: 18rem;">
+            <img src="../img/pc6.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <div class="containerBtn">
+                <a href="#" class="btn btn-primary">COMPRAR</a>
+              </div>
             </div>
-    
-            <div class="containerLogo">
-                <img src="../img/logoImg.png" alt="logo" class="logo">
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-lg-4 centrarCard">
+          <div class="card" style="width: 18rem;">
+            <img src="../img/pc6.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <div class="containerBtn">
+                <a href="#" class="btn btn-primary">COMPRAR</a>
+              </div>
             </div>
-        </footer>
-</body>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-lg-4 centrarCard">
+          <div class="card" style="width: 18rem;">
+            <img src="../img/pc6.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <div class="containerBtn">
+                <a href="#" class="btn btn-primary">COMPRAR</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+    <footer>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-4 containerFooter containerAyuda">
+            <h5 class="titAyuda">¿NECESITAS AYUDA?</h5>
+            <button class="contactanos">CONTACTANOS</button>
+          </div>
+
+          <div class="col-4 containerFooter containerRedes">
+            <a href=""> <i class="fa-brands fa-facebook fa-2x"></i></a>
+            <a href=""> <i class="fa-brands fa-instagram fa-2x"></i></a>
+            <a href=""> <i class="fa-brands fa-twitter fa-2x"></i></a>
+          </div>
+
+          <div class="col-4 containerFooter">
+              <img src="../img/logoImg.png" class="imgLogo" alt="">
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+
+
 </html>

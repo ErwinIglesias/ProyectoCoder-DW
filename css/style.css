@@ -196,15 +196,20 @@ section{
 /* INICIO STYLES ARMA TU PC */
 
 .containerArmaTuPc{
-    margin-top: 30px;
     display: flex;
     flex-direction: column;
 }
 
 .containerArmaPc{
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.imgArmatuPc{
+    margin-top: 15px;
+    width: 200px;
 }
 
 .form-select{
